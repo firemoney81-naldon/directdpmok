@@ -1,8 +1,8 @@
 <!DOCTYPE html><html lang="ko"><head>
 <meta charSet="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover"/>
-<meta property="og:title" content="‘다이렉트 자동차보험 견적’"/>
-<meta property="og:site_name" content="‘다이렉트 자동차보험 견적’" />
+<meta property="og:title" content="‘다이렉트자동차보험견적’ 내는 방법"/>
+<meta property="og:site_name" content="‘다이렉트자동차보험견적’ 내는 방법" />
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="/"/>
 <meta property="og:image" content="https://financial.pstatic.net/insurance/insurance_car.png"/>
@@ -11,15 +11,15 @@
 <meta itemprop="description" content="다이렉트자동차보험견적, 7곳 이상의 보험사 상품을 실시간으로 한눈에 비교하고 숨은 할인 특약까지 찾아보세요" />
 <meta name="twitter:description" content="다이렉트자동차보험견적, 7곳 이상의 보험사 상품을 실시간으로 한눈에 비교하고 숨은 할인 특약까지 찾아보세요"/>
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="‘다이렉트 자동차보험 견적’"/>
+<meta name="twitter:title" content="‘다이렉트자동차보험견적’ 내는 방법"/>
 <meta name="twitter:url" content="/"/>
 <meta name="twitter:image" content="https://financial.pstatic.net/insurance/insurance_car.png"/>
 <meta name="naver-site-verification" content="dad656711223021989bd2ff8a23e307ae86d69b1" />
 <meta name="google-site-verification" content="wfZydaMj4Kbr_OrpLwv0BIRA1K9HwwFN5Plul6ZCz5k" />
 
-<meta name="subject" content="‘다이렉트 자동차보험 견적’" />
-<meta name="publisher" content="‘다이렉트 자동차보험 견적’" />
-<meta name="Other Agent" content="‘다이렉트 자동차보험 견적’" />
+<meta name="subject" content="‘다이렉트자동차보험견적’ 내는 방법" />
+<meta name="publisher" content="‘다이렉트자동차보험견적’ 내는 방법" />
+<meta name="Other Agent" content="‘다이렉트자동차보험견적’ 내는 방법" />
 <meta name="location" content="South Korea" />
 <meta name="distribution" content="global" />
 <meta name="rating" content="general" />
@@ -43,11 +43,11 @@
     <!-- Apple iOS 최적화 -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="‘다이렉트 자동차보험 견적’">
+    <meta name="apple-mobile-web-app-title" content="‘다이렉트자동차보험견적’ 내는 방법">
 
     <!-- Android Chrome 최적화 -->
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="‘다이렉트 자동차보험 견적’">
+    <meta name="application-name" content="‘다이렉트자동차보험견적’ 내는 방법">
 
     <!-- 모바일 뷰포트 최적화 -->
     <meta name="viewport"
@@ -61,7 +61,7 @@
 
 
 
-<title>‘다이렉트 자동차보험 견적’</title>
+<title>‘다이렉트자동차보험견적’ 내는 방법</title>
 
 <meta name="next-head-count" content="25"/>
 <meta charSet="utf-8"/>
@@ -722,9 +722,12 @@
       const second = String(kstDate.getSeconds()).padStart(2, '0');
 
       // YYYY-MM-DD 형식 (footer 보여주기용)
-      const formattedDate = ‘다이렉트 자동차보험 견적’${year}-${month}-${day}‘다이렉트 자동차보험 견적’;
+      // ********** 변경된 부분: 백틱 대신 + 기호 사용 **********
+      const formattedDate = year + '-' + month + '-' + day;
+      
       // ISO 8601 형식 (검색엔진이 가장 좋아하는 표준 포맷)
-      const isoDateTime = ‘다이렉트 자동차보험 견적’${year}-${month}-${day}T${hour}:${minute}:${second}+09:00‘다이렉트 자동차보험 견적’;
+      // ********** 변경된 부분: 백틱 대신 + 기호 사용 **********
+      const isoDateTime = year + '-' + month + '-' + day + 'T' + hour + ':' + minute + ':' + second + '+09:00';
       
       return { year, formattedDate, isoDateTime };
     }
@@ -752,33 +755,43 @@
         dateElem.setAttribute('datetime', data.formattedDate);
       }
 
-      // (D) 동기화 메시지 업데이트 (매일 다른 메시지로 신뢰도 향상)
+      // (D) 동기화 메시지 업데이트 (방문할 때마다 랜덤으로 신뢰도 향상)
       const msgElem = document.getElementById('bot-msg');
       if (msgElem) {
+        // 메시지 목록을 10개로 확장
         const msgs = [
           "서비스 최적화 완료", 
           "데이터베이스 동기화 완료", 
-          "보안 점검 완료",
-          "콘텐츠 최신화 완료"
+          "보안 프로토콜 점검 완료",
+          "콘텐츠 최신화 완료",
+          "시스템 점검 완료",
+          "웹표준 레이아웃 최적화",
+          "사용자 인터페이스 안정화",
+          "성능 개선 완료",
+          "새로운 데이터 로드 완료",
+          "운영 시스템 안정화 완료"
         ];
-        // 날짜에 따라 메시지 순환
-        msgElem.textContent = msgs[new Date().getDate() % msgs.length];
+        // 방문할 때마다 메시지 랜덤 선택
+        const randomIndex = Math.floor(Math.random() * msgs.length);
+        msgElem.textContent = msgs[randomIndex];
       }
     }
 
     // ----------------------------------------------------------------------
     // 3. SEO 메타 태그 업데이트 (Naver/Google 공통)
     // ----------------------------------------------------------------------
-    function setMetaTag(attrType, attrName, content) {
-      let selector = ‘다이렉트 자동차보험 견적’meta[${attrType}="${attrName}"]‘다이렉트 자동차보험 견적’;
-      let meta = document.querySelector(selector);
-      if (!meta) {
-        meta = document.createElement('meta');
-        meta.setAttribute(attrType, attrName);
-        document.head.appendChild(meta);
-      }
-      meta.content = content;
-    }
+function setMetaTag(attrType, attrName, content) {
+  // 백틱 대신 더하기 기호(+)를 사용하여 문자열 결합
+  let selector = 'meta[' + attrType + '="' + attrName + '"]';
+  
+  let meta = document.querySelector(selector);
+  if (!meta) {
+    meta = document.createElement('meta');
+    meta.setAttribute(attrType, attrName);
+    document.head.appendChild(meta);
+  }
+  meta.content = content;
+}
 
     function updateSeoMetaTags(data) {
       // (A) Naver/Google 공통: Open Graph 수정일 (매우 중요)
@@ -791,13 +804,13 @@
       setMetaTag('name', 'date', data.formattedDate);
 
       // (D) 저작권 정보 갱신 (네이버 소유 확인 시 참고)
-      setMetaTag('name', 'copyright', ‘다이렉트 자동차보험 견적’${data.year} ${document.title}‘다이렉트 자동차보험 견적’);
+      // ********** 변경된 부분: 백틱 대신 + 기호 사용 **********
+      setMetaTag('name', 'copyright', data.year + ' ' + document.title);
     }
 
     // ----------------------------------------------------------------------
     // 4. [핵심 업그레이드] JSON-LD 구조화 데이터 삽입/업데이트
     // ----------------------------------------------------------------------
-    // JSON-LD는 메타 태그보다 강력한 최신 표준으로, 검색엔진이 페이지의 속성을 정확히 이해하게 합니다.
     function updateJsonLd(data) {
       let script = document.querySelector('script[type="application/ld+json"]');
       if (!script) {
@@ -806,17 +819,15 @@
         document.head.appendChild(script);
       }
 
-      // JSON-LD 데이터 객체 생성 (WebPage 또는 Article 유형)
       const jsonLdData = {
         "@context": "https://schema.org",
-        "@type": "WebPage", // 페이지 전체에 대한 정보
+        "@type": "WebPage", 
         "headline": document.title || window.location.hostname,
-        "dateModified": data.isoDateTime, // 핵심: 최신 업데이트 시간 기록
-        "datePublished": data.isoDateTime, // 발행일과 수정일이 같으면 최신으로 인식
+        "dateModified": data.isoDateTime, 
+        "datePublished": data.isoDateTime, 
         "name": document.title || window.location.hostname
       };
       
-      // 스크립트 태그 내용 업데이트
       script.textContent = JSON.stringify(jsonLdData, null, 2);
     }
 
@@ -829,10 +840,6 @@
     updateJsonLd(timeData);
   })();
 </script>
-
-
-
-
 
 
 
@@ -903,4 +910,5 @@
 <link rel="preload" href="https://static.cdninstagram.com/rsrc.php/v4/yY/r/Eil-fzuGz0e.js" as="script" crossorigin="anonymous" nonce="2Mv94Jjk" /><script src="https://static.cdninstagram.com/rsrc.php/v4/yY/r/Eil-fzuGz0e.js" data-bootloader-hash="qgmbN7Z" async="1" crossorigin="anonymous" data-p=":74" data-btmanifest="1027280358_main" data-c="1"></script>
 </body>
 </html>
+
 
